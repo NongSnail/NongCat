@@ -1,12 +1,83 @@
 body {
-  font-family: "Avenir Next";
-}
+    font-family: "Avenir Next";
+  }
+  
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  .header {
+    background-color: #282834;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 50px;
+    padding: 20px 40px;
+  }
+  .header-list li {
+    float: left;
+    padding: 33px 20px;
+  }
+  
+  
+  .main {
+    background-color:#282834;
+    height: 700px;
+    background-image: url('nongcat.png');
+    background-attachment: fixed; 
+    background-size: 70% ;
+    background-repeat: no-repeat;
+    background-position: center top ;
+  }
+  
+  .main2 {
+    background-color: #576745;
+    height: 300px;
+  }
 
-li {
-  list-style: none;
-  float: left;
-  padding: 33px 20px;
-}
+  .main3 {
+    background-color: #fff;
+    height: 750px;
+  }
 
 .header {
   background-color: #282834;
@@ -88,11 +159,11 @@ padding: 70px 0;
 margin-top: 10px;
 text-align: center;
 }
-.{
-max-width: 1200px;
-width: 100%;
-margin: 0 auto;
-}
+/* .{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+} */
 main{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -132,14 +203,14 @@ transform: scale(1.1);
 transition: all .4s;
 }
 .blogContent{
-position: absolute;
-left: 0;
-bottom: -45px;
-width: 100%;
-color: #fff;
-padding: 10px 5px;
-background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%);
-transition: all .5s;
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, rgb(102, 102, 102) 0%,rgba(102,102,102,.4) 100%);
+  transition: all .5s;
 }
 .singleBlog:hover .blogContent{
 bottom: 0;
@@ -179,9 +250,12 @@ text-decoration: none;
 .blogContent a:hover{
 text-decoration: underline;
 }
-
-
-
+.catImg {
+  width: 300px;
+  height: 175px;
+}
+ 
+ 
 @media (max-width:992px) {
 main{
   grid-template-columns: repeat(3, 1fr);
