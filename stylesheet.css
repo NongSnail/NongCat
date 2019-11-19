@@ -62,7 +62,7 @@ body {
   .main {
     background-color:#282834;
     height: 700px;
-    background-image: url('nongcat.png');
+    background-image: url('images/nongcat.png');
     background-attachment: fixed; 
     background-size: 70% ;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ body {
 .main {
   background-color:#282834;
   height: 700px;
-  background-image: url('nongcat.png');
+  background-image: url('images/nongcat.png');
   background-attachment: fixed; 
   background-size: 70% ;
   background-repeat: no-repeat;
