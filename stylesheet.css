@@ -13,7 +13,7 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 40px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -120,22 +120,13 @@ body {
   background-color: #282834;
   height: 100px;
 }
-
-.img-area {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-cat{
-  padding: 0 20px 20px;
-}
-
 img:hover{
   opacity: .5;
   transition: .9s;
+}
+img{
+  width: 100%;
+  height: 100%;
 }
 /*  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
@@ -278,5 +269,20 @@ header{
 
   main{
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* responsive */
+
+@media only screen and (min-width: 1200px) {
+
+  .main {
+    background-color:#282834;
+    height: 800px;
+    background-image: url('images/nongcat.png');
+    background-attachment: fixed; 
+    background-size: 70% ;
+    background-repeat: no-repeat;
+    background-position: center top ;
   }
 }
