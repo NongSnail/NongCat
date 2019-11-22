@@ -3,143 +3,132 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>แมวววววววว</title>
+    <title> เรื่องแมว </title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-list">
+    <div id="main" style="padding: 0;">
+        <div class="header">
+            <div class="header-list">
                 <div id="navbar">
-                        <a class="active" href="javascript:void(0)">Home</a>
-                        <a href="javascript:void(0)">News</a>
-                        <a href="javascript:void(0)">Contact</a>
-                      </div>
+                    <a class="active" href="javascript:void(0)">Home</a>
+                    <span onclick="openNav()">
+                        <a href="javascript:openNav()">Cats</a>
+                    </span>
+                    <div id="myBtn">
+                        <a href="javascript:void(0)">Creator</a>
+                    </div>
+                    <a style="float:right">About</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main fadeInUp">
+            <a href="#">
+
+                    <button type="button" class="btn bounce-7"> Let's see </button>
+                
+            </a>
+
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="header-creator">
+                    <p>Creator</p>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th>member1</th>
+                        <th>member2</th>
+                        <th>member3</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/fai.jpg" alt="fai" width=100%>
+                        </td>
+                        <td>
+                            <img src="images/boon.jpg" alt="fai" width=100%>
+                        </td>
+                        <td>
+                            <img src="images/rew.jpg" alt="fai" width=100%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Name</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>fai</td>
+                        <td>boon</td>
+                        <td>rew</td>
+                    </tr>
+                    <tr>
+                        <td>Dev/UI</td>
+                        <td>Dev</td>
+                        <td>Infra</td>
+                    </tr>
+            </div>
         </div>
     </div>
-    
-
-    <div class="main">
-
-    </div>
-
-    <!-- <div class="main2">
-
-    </div> -->
-
-    <div class="main3">
-        
-        <section>
-            <div class="container">
-                    <div class="singleBlog2">
-                            <img src="images/cat2.jpg" alt="">
-                            <div class="blogContent">
-                                <h3>น้องแมว</h3>
-                                <br><br>
-                                <a href="#" class="btn">Read More</a>
-                            </div>
-                        </div>
-
-                <main>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/AmericanShortHair.jpg" alt="AmericanShortHair">
-                        <div class="blogContent">
-                            <h3>American Short Hair</h3>
-                            <br><br>
-                            <a href="pages/2-americanshorthair.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/Bengal.jpg" alt="Bengal">
-                        <div class="blogContent">
-                            <h3>Bengal</h3>
-                            <br><br>
-                            <a href="pages/10-bengal.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/BritishShorthair.jpg" alt="BritishShorthair">
-                        <div class="blogContent">
-                            <h3>British Shorthair</h3>
-                            <br><br>
-                            <a href="pages/7-britishshorthair.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/Exotic.jpg" alt="Exotic">
-                        <div class="blogContent">
-                            <h3>Exotic</h3>
-                            <br><br>
-                            <a href="pages/8-exotic.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/Korat.jpg" alt="Korat">
-                        <div class="blogContent">
-                            <h3>Korat</h3>
-                            <br><br>
-                            <a href="pages/4-korat.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/MainCoon.jpg" alt="MainCoon">
-                        <div class="blogContent">
-                            <h3>MainCoon</h3>
-                            <br><br>
-                            <a href="pages/9-mainecoon.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/persian.jpg" alt="Persian">
-                        <div class="blogContent">
-                            <h3>Persian</h3>
-                            <br><br>
-                            <a href="pages/1-persian.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/ScottishFold.jpg" alt="ScottishFold">
-                        <div class="blogContent">
-                            <h3>Scottish Fold</h3>
-                            <br><br>
-                            <a href="pages/3-scottish.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="singleBlog">
-                        <img class="catImg" src="images/cat.jpg" alt="ScottishFold">
-                        <div class="blogContent">
-                            <h3>???????</h3>
-                            <br><br>
-                            <a href="pages/3-scottish.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                        
-                    
-
-                </main>
-            </div>
-        </section>
 
 
-    </div>
-<!--     
-    <div class="main4"></div> -->
 
     <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-            </script>
+        }
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
 </body>
 
 </html>

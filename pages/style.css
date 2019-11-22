@@ -124,10 +124,11 @@ button{
     background-image:-webkit-linear-gradient(right,#24C6DC,#514A9D); 
     box-shadow: 0 12px 16px 0 rgb(42, 237, 255,0.24), 0 17px 50px 0 rgba(42, 237, 255,0.1);
     border: none;
+    
 } 
 
 .btn1{ 
-    position: fixed;
+  position: fixed;
   z-index: 1;
   top: 600px;
   right: 500px;
