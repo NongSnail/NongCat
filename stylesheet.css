@@ -86,7 +86,7 @@
 .close {
   color: #fff;
   float: right;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -101,7 +101,7 @@
 .header-creator{
   padding: 10px 16px;
   background: linear-gradient(280deg, rgba(36,198,220,1) 0%, rgba(81,74,157,1) 100%);
-  font-size: 30;
+  font-size: 40;
   color: white;
 }
 
@@ -139,14 +139,21 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  color: gray;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  background: linear-gradient(280deg, rgba(36,198,220,1) 0%, rgba(81,74,157,1) 100%);
+  box-shadow: -1px -1px 38px 1px  rgba(0, 247, 255, 0.2);
+  color: #fff;
+}
+
+.sidenav a:hover:first-child {
+  background: none;
+  box-shadow: none;
 }
 
 .sidenav .closebtn {
@@ -242,4 +249,8 @@
   57%  { transform: scale(1,1)      translateY(-7px); }
   64%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
+}
+
+div.cat-link>img{
+  vertical-align: middle;
 }

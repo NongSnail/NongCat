@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> เรื่องแมว </title>
+    <title> 10อันดับแมว </title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
@@ -20,7 +20,9 @@
                     <div id="myBtn">
                         <a href="javascript:void(0)">Creator</a>
                     </div>
-                    <a style="float:right">About</a>
+                    <div id="myBtn2">
+                        <a style="float:right">About</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,22 +31,63 @@
         <div class="main fadeInUp">
             <a href="#">
 
-                    <button type="button" class="btn bounce-7"> Let's see </button>
-                
-            </a>
+                <button type="button" class="btn bounce-7"> Let's see </button>
 
+            </a>
         </div>
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>American Shorthair
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Scottish Fold
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Siamese
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Korat
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Khao Manee
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>British Shorthair
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Exotic
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Main Coon
+                </div>
+            </a>
+            <a href="#">
+            <div class="cat-link">
+                <img src="images/nanong.png" width=15%>Bengal
+            </div></a>
 
-            <!-- Modal content -->
+        </div>
+
+
+        <!-- Modal mybtn creator -->
+        <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="header-creator">
@@ -86,7 +129,16 @@
         </div>
     </div>
 
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="header-creator">
+                <p>Creator</p>
+            </div>
 
+
+        </div>
+    </div>
 
     <script>
         // Get the modal
@@ -118,8 +170,8 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "300px";
         }
 
         function closeNav() {
