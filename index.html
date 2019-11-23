@@ -18,17 +18,17 @@
                         <a href="javascript:openNav()">Cats</a>
                     </span>
                     <div id="myBtn2">
-                        <a href="javascript:openNav()">About</a>
+                        <a href="javascript:openNav2()">About</a>
                     </div>
                     <div id="myBtn">
                         <a href="javascript:void(0)" style="float:right">Creator</a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
-         <!-- button -->
+        <!-- button -->
         <div class="main fadeInUp">
             <a href="pages/1-persian.html">
 
@@ -36,15 +36,15 @@
 
             </a>
         </div>
-         <!-- sidebar -->
+        <!-- sidebar menu  -->
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <bsr>
+            <br>
             <a href="pages/1-persian.html">
-                    <div class="cat-link">
-                        <img src="images/nanong.png" width=15%>Persian
-                    </div>
-                </a>
+                <div class="cat-link">
+                    <img src="images/nanong.png" width=15%>Persian
+                </div>
+            </a>
             <a href="pages/2-americanshorthair.html">
                 <div class="cat-link">
                     <img src="images/nanong.png" width=15%>American Shorthair
@@ -93,7 +93,28 @@
             <br>
 
         </div>
+        <!-- sidebar2  about  -->
+        <div id="mySidenav2" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <h1> About </h1> 
+            <br>
+            <h2> "ร้องเรียกเหมียวๆ เดี๋ยวก็มา เคล้าแข้งเคล้าขาน่าเอ็นดู" </h2> <br>
+            <h3>  ร้องเรียกเหมียวๆเที่ยวก็มาเหล้าแข้อเคล้าราน่าเอ็นดเราต่างคุ้นเคยกับประโยคนี้กันดีและที่ร่าแมวเหมียวน่ารักและช่างคลอเคลียก็เป็น
+                ความจริงเสียด้วยจึงทำให้ใครต่อใครพากันหลงรักแมวไม่แพ้กับสัตว์เลี้ยงประเภทอื่นเลยทีเดียานอกจากความช่างเอาใจแมวที่เป็นสัตว์ที่มี
+                ความเป็นตัวของตัวเองสูงและรักอิสระดังนั้นเจ้าของจึงไม่ต้องพะเน้าพะนอหรือคอยเล่นด้วยตลอดเวลาซึ่งต่างกันแมวเมืองหนาวมีขนยาว
+                กว่าแมวในเมืองร้อนแมวที่มีกมเลี้ยงกันมีหลายพันธุ์เช่นพันธุ์เปอร์เซียและพันธุ์ไทยความแตกต่างของสายพันธุ์ที่มีส่วนทำให้แมวแต่ละตัว
+                นั้นมีอุปนิสัยและสภาพร่างกายที่ต้องการการตแลต่างกันด้วยนะคะถือว่าเป็นข้อดีสำหรับเจ้าของสัตว์เลี้ยงที่ต้องการเวลาส่วนตัวด้วยเช่นกัน
+                เพราะฉะนั้นแมวจึงเป็นสัตว์เลี้ยงในอุดมคติของหลายๆคนอย่างไม่ต้องสงสัย
+                เว๊บไซค์นี้จึงรวบรวมแมวที่นิยมในไทยมา 10 อันดับเพื่อทาสแมวโดยเฉพาะและคนที่พร้อมจะเลี้ยงแมวแต่ไม่รู้จะเลือกสายพันธุ์ไหนดีที่จะเหมาะกับตนเอง หวังว่าทุกท่านสนุกเพลิดเพลินกับการใช้เวลากับน้องแมวที่น่ารักนะคะ</h3>
 
+            <br><br>
+            <h1> References </h1>
+            <h3> 10 สายพันธุ์แมวยอดนิยมในไทย 
+                <a href="https://sites.google.com/site/wichuda0po/10-say-phanthu-maew-yxd-niym-ni-thiy">[link]</a></h3>
+            <h3> 10 สายพันธุ์แมวที่คนไทยนิยมเลี้ยง
+                <a href="https://www.petcitiz.info/10-%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%99/">[link]</a></h3>
+
+        </div>
 
         <!-- Modal mybtn creator -->
         <div id="myModal" class="modal">
@@ -144,13 +165,10 @@
             <div class="header-creator">
                 <p>Creator</p>
             </div>
-
-
         </div>
     </div>
     <!-- JS -->
     <script>
-        
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
@@ -172,6 +190,16 @@
             document.getElementById("main").style.marginLeft = "300px";
         }
 
+        function openNav2() {
+            document.getElementById("mySidenav2").style.width = "1530px";
+            document.getElementById("main").style.marginLeft = "1000px";
+        }
+
+        function closeNav2() {
+            document.getElementById("mySidenav2").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
@@ -180,17 +208,12 @@
 
 
 
-<!-- Using a free CDN -->
-<script src="https://cdn.rawgit.com/scottschiller/Snowstorm/master/snowstorm-min.js">
-// 1. Define a color for the snow
-snowStorm.snowColor = '#fff';
-// 2. To optimize, define the max number of flakes that can
-// be shown on screen at once
-snowStorm.flakesMaxActive = 96;
-// 3. Allow the snow to flicker in and out of the view
-snowStorm.useTwinkleEffect = true; 
-// 4. Start the snowstorm!
-snowStorm.start();</script>
+    <!-- snow -->
+    <script src="https://cdn.rawgit.com/scottschiller/Snowstorm/master/snowstorm-min.js">
+        snowStorm.snowColor = '#fff';
+        snowStorm.flakesMaxActive = 96;
+        snowStorm.useTwinkleEffect = true;
+        snowStorm.start();</script>
 
 </body>
 
