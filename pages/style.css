@@ -1,18 +1,16 @@
   body  {
     background-image: url("../images/BG2.jpg");
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
     color: #ffffff;
     background-repeat: no-repeat;
     background-attachment: fixed ;
   }
   h1{
-    font-family: sans-serif;
     font-size: 75px;
     letter-spacing: 0.2em;
   }
   p{
     text-indent: 2.5em;
-    font-family: sans-serif;
     font-size: 18px;
     margin: 35px;
     color: #ececf0bd;
@@ -27,7 +25,7 @@
   }
 
   h2{
-    font-family: sans-serif;
+    
     font-size: 25px;
   }
   
@@ -222,21 +220,18 @@ right: 50px;
   width: 370px;
 }
   h1{
-    font-family: sans-serif;
     font-size: 50px;
     letter-spacing: 0.2em;
   }
   p{  
     text-indent: 2.5em;
-    font-family: sans-serif;
     font-size: 18px;
     margin: 35px;
     color: #ececf0bd;
     text-align: justify;
   }
   h2{
-    font-family: sans-serif;
-    font-size: 25px;
+        font-size: 25px;
   }
   hr { 
     border: 3px solid white;
